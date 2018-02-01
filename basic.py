@@ -23,18 +23,31 @@ web_stats = {'Day': [1, 2, 3, 4, 5, 6],
 
 df = pd.DataFrame(web_stats)
 # print(type(df['Day'][1]))
+df.drop([0], inplace=True)
 # print(df)
-# df.drop(df.index, inplace=True)
+df1 = df.head(1).index.values
+print(df1[0])
+
 ####
-print(df['Day'][0])
-i = 0
+# print(df['Day'][0])
+# i = 0
 # print(df.iloc[i])
 # df_a = pd.DataFrame(df.iloc[i])
 ####
 # print(df[0:1])
 
-print(df[i: i+1])
-print('len: ', len(df))
+###
+# record = df[0: 1]
+# print(record['Day'])
+
+###
+# print(df[i: i+1])
+# print('len: ', len(df))
+
+# #遍历dataframe
+# while i < len(df):
+#     print(df[i: i+1])
+#     i = i+1
 
 # print(df.iloc[-1:])
 # print(df.iat[-1, -1])
@@ -95,3 +108,7 @@ print('len: ', len(df))
 # # delta = t2 - t1
 # print('t1: ', t1)
 # print('t2: ', t2)
+
+
+#???
+# 怎么删除dataframe的第一行后，再继续删除剩下的第一行
