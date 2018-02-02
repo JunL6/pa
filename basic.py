@@ -26,7 +26,9 @@ df = pd.DataFrame(web_stats)
 df.drop([0], inplace=True)
 # print(df)
 df1 = df.head(1).index.values
-print(df1[0])
+i = df.head(1).index.values[0]
+# i = df1[0]
+print(i)
 
 ####
 # print(df['Day'][0])
