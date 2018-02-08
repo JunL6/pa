@@ -69,10 +69,10 @@ df_all = df_all.append(df_singleaggregateddate)
 # ll = [x * x for x in range(1, 11)]
 # print(findMinAndMax(ll))
 
-li = range(1, 11)
-print(li)
-ll = list(range(1, 11))
-print(ll)
+# li = range(1, 11)
+# print(li)
+# ll = list(range(1, 11))
+# print(ll)
 
 
 # import os # 导入os模块，模块的概念后面讲到
@@ -82,3 +82,35 @@ print(ll)
 # L = ['Apple', 'IBM', 18, 'HellO', 'WoRld']
 # l = [s.lower() for s in L if isinstance(s, str) is True]
 # print(l)
+
+# 杨辉三角: failed....
+# def triangles():
+#     n = 0
+#     lt = []
+#     lt.append([1])
+#     lt.append([1,1])
+#     while True:
+#         while lt[n] is not None:
+#             yield lt[n], n
+#             n = n + 1
+#
+#             ll = [1]
+#             i = 1
+#             while i <= n:
+#                 if i==n:
+#                     ll.append(1)
+#                     i = i + 1
+#                 else:
+#                     j= lt[n-1][i-1] + lt[n-1][i]
+#                     ll.append(j)
+#                     i = i + 1
+#             lt.append(ll)
+#
+#
+# tri = triangles()
+# print(next(tri))
+# print(next(tri))
+# print(next(tri))
+# print(next(tri))
+
+
