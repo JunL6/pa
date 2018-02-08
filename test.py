@@ -24,22 +24,61 @@ df_all = df_all.append(df_singleaggregateddate)
 
 # print(df_all)
 
-#函数的参数
-ll = [1, 2, 3]
-print(*ll)
+# #函数的参数
+# ll = [1, 2, 3]
+# print(*ll)
+# print(ll)
+#
+# #keyword operand
+# def person(name, age, **kw):
+#     print('name:' , name, 'age: ', age, 'other: ', kw)
+#
+# person('Bob', 35, city='Beijing') #不能是person('Bob', 35, 'Beijing')
+#
+# #可变参数：计算传入参数的乘积
+# def product(*numbers):
+#     result = 1
+#     for n in numbers:
+#         result = result * n
+#     print(result)
+#
+# product(5, 6, 7, 9)
+
+# # slice
+# def trim(s):
+#     return s[1 : len(s)-1]
+#
+# str = 'helloworld'
+# print(trim(str))
+
+# # iteration
+# def findMinAndMax(L):
+#     min = L[0]
+#     max = L[0]
+#     for item in L:
+#         if item < min:
+#             min = item
+#         elif item > max:
+#             max = item
+#     return min, max
+#
+# L = [5, 4, 3, 2, 1, 0, -9, 99]
+# print(findMinAndMax(L))
+#
+# # ################  list comprehensions
+# ll = [x * x for x in range(1, 11)]
+# print(findMinAndMax(ll))
+
+li = range(1, 11)
+print(li)
+ll = list(range(1, 11))
 print(ll)
 
-#keyword operand
-def person(name, age, **kw):
-    print('name:' , name, 'age: ', age, 'other: ', kw)
 
-person('Bob', 35, city='Beijing') #不能是person('Bob', 35, 'Beijing')
+# import os # 导入os模块，模块的概念后面讲到
+# dir = [d for d in os.listdir('.')]
+# print(dir)
 
-#可变参数：计算传入参数的乘积
-def product(*numbers):
-    result = 1
-    for n in numbers:
-        result = result * n
-    print(result)
-
-product(5, 6, 7, 9)
+# L = ['Apple', 'IBM', 18, 'HellO', 'WoRld']
+# l = [s.lower() for s in L if isinstance(s, str) is True]
+# print(l)
